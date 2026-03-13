@@ -1,5 +1,7 @@
 # 🥖 La Boulangerie du Village
 
+Vous pouvez tester l'application en ligne ici : [La Boulangerie du Village](https://meriemezdari.github.io/Projet-La-Boulangerie-du-Village-BDD-MySQL)
+
 ## Présentation
 
 **La Boulangerie du Village** est un site web permettant aux clients de consulter les produits d’une boulangerie, d’ajouter des articles au panier et de passer une commande.
