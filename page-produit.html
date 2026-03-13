@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produits - La Boulangerie du Village</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="filter.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="barre-haut">
+            <a href="index.html">
+                <img src="logo_boulangerie.png" alt="Logo" class="logo">
+            </a>
+            <h1 class="titre">La Boulangerie du Village</h1>
+            <a href="inscription.html">
+                <img src="logo-inscription.png" alt="Connexion" class="inscription">
+            </a>
+        </div>
+
+        <nav class="barre-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page-produit.html">Produits</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="panier.php">Panier</a></li>
+                <li><a href="informations-pratiques.html">Informations Pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produits-section">
+            <h2>Nos Produits</h2>
+
+            <div class="filtres">
+                <button onclick="filtrer('tous', event)" class="actif">Tous</button>
+                <button onclick="filtrer('pain', event)">Pains</button>
+                <button onclick="filtrer('viennoiserie', event)">Viennoiseries</button>
+                <button onclick="filtrer('patisserie', event)">Pâtisseries</button>
+                <button onclick="filtrer('sale', event)">Salés</button>
+            </div>
+
+            <h3 class="categorie-titre">Pains</h3>
+            <div class="produits-container">
+
+                <div class="produit pain">
+                    <img src="baguette.png" alt="Baguette">
+                    <p>Baguette</p>
+                    <p>Prix : 3€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="1">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit pain">
+                    <img src="pain_de_campagne.png" alt="Pain de campagne">
+                    <p>Pain de campagne</p>
+                    <p>Prix : 3.50€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="2">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit pain">
+                    <img src="pain_complet.png" alt="Pain complet">
+                    <p>Pain complet</p>
+                    <p>Prix : 3.20€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="3">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <h3 class="categorie-titre">Viennoiseries</h3>
+            <div class="produits-container">
+
+                <div class="produit viennoiserie">
+                    <img src="croissant.png" alt="Croissant">
+                    <p>Croissant</p>
+                    <p>Prix : 1.20€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="4">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit viennoiserie">
+                    <img src="pain_au_chocolat.png" alt="Pain au chocolat">
+                    <p>Pain au chocolat</p>
+                    <p>Prix : 1.50€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="5">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit viennoiserie">
+                    <img src="pain_suisse.png" alt="Pain suisse">
+                    <p>Pain suisse</p>
+                    <p>Prix : 1.80€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="6">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <h3 class="categorie-titre">Pâtisseries</h3>
+            <div class="produits-container">
+
+                <div class="produit patisserie">
+                    <img src="tarte_citron.png" alt="Tarte au citron">
+                    <p>Tarte au citron</p>
+                    <p>Prix : 4€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="7">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit patisserie">
+                    <img src="mille_feuilles.png" alt="Mille-feuilles">
+                    <p>Mille-feuilles</p>
+                    <p>Prix : 4.50€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="8">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit patisserie">
+                    <img src="eclair_chocolat.png" alt="Éclair chocolat">
+                    <p>Éclair chocolat</p>
+                    <p>Prix : 3.80€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="9">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <h3 class="categorie-titre">Salés</h3>
+            <div class="produits-container">
+
+                <div class="produit sale">
+                    <img src="quiche.png" alt="Quiche">
+                    <p>Quiche</p>
+                    <p>Prix : 5€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="10">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit sale">
+                    <img src="sandwich.png" alt="Sandwich">
+                    <p>Sandwich</p>
+                    <p>Prix : 4.50€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="11">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+                <div class="produit sale">
+                    <img src="mini_pizza.png" alt="Mini pizza">
+                    <p>Mini pizza</p>
+                    <p>Prix : 6€</p>
+
+                    <form action="ajouter_panier.php" method="post">
+                        <input type="hidden" name="id_produit" value="12">
+                        <input type="number" name="quantite" value="1" min="1">
+                        <button type="submit">Ajouter au panier</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 La Boulangerie du Village. Tous droits réservés.</p>
+    </footer>
+
+</body>
+
+</html>

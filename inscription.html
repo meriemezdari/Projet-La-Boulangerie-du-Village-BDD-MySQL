@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Inscription / Connexion - La Boulangerie du Village</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="barre-haut">
+            <a href="index.html">
+                <img src="logo_boulangerie.png" alt="Logo" class="logo">
+            </a>
+            <h1 class="titre">La Boulangerie du Village</h1>
+            <a href="inscription.html">
+                <img src="logo-inscription.png" alt="Inscription/Connexion" class="inscription">
+            </a>
+        </div>
+
+        <nav class="barre-nav">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="page-produit.html">Produit</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="panier.php">Panier</a></li>
+                <li><a href="informations-pratiques.html">Informations Pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-container">
+            <div class="authentification">
+                <h2>Inscription</h2>
+                <form action="inscription.php" method="post">
+                    <input type="text" name="nom" placeholder="Nom" required>
+                    <input type="text" name="prenom" placeholder="Prénom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="mot_de_passe" placeholder="Mot de passe" required>
+                    <input type="password" name="confirmation_mdp" placeholder="Confirmer le mot de passe" required>
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+
+            <div class="authentification">
+                <h2>Connexion</h2>
+                <form action="connexion.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="mot_de_passe" placeholder="Mot de passe" required>
+                    <button type="submit">Se connecter</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 La Boulangerie du Village. Tous droits réservés.</p>
+    </footer>
+</body>
+
+</html>
